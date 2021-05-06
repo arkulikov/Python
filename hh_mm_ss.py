@@ -9,13 +9,4 @@ sec %= 3600
 min = sec // 60
 sec %= 60
 
-if hour < 10:
-    hour = '0' + str(hour)
-
-if min < 10:
-    min = '0' + str(min)
-
-if sec < 10:
-    sec = '0' + str(sec)
-
-print(f"{hour}:{min}:{sec}")
+print(f"{hour:02}:{min:02}:{sec:02}")
