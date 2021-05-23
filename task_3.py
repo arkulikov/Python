@@ -5,8 +5,7 @@
 
 
 def my_func(a, b, c):
-    obj_one = (a, b, c)
-    return sum(obj_one) - min(obj_one)
+    return sum((a, b, c)) - min((a, b, c))
 
 
 print(my_func(4, 2, 4))
