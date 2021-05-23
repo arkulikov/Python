@@ -12,6 +12,3 @@ def my_fun(var_1, var_2):
         return print(res)
     except ZeroDivisionError:
         print("На ноль делить нельзя!")
-
-
-my_fun(4, 2)
