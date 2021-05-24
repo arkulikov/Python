@@ -16,4 +16,8 @@ def my_func_one(x, y):
 
 
 def my_func_two(x, y):
-    for x in range(y):
+    res = 1
+    while y > 0:
+        res *= x
+        y -= 1
+    print(res)
