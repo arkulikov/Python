@@ -10,3 +10,14 @@
 """
 
 
+def int_func(text):
+    return str(text).capitalize()
+
+
+def int_func_two():
+    words = input("Введите слова: ").split()
+    my_list = []
+    for word in words:
+        my_list.append(int_func(word))
+    my_str = ' '.join(my_list)
+    print(my_str)
