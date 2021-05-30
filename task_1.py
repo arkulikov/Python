@@ -5,10 +5,15 @@
 
 
 def my_fun(var_1, var_2):
-    var_1 = int(input("Введите первое число: "))
-    var_2 = int(input("Введите второе число: "))
     try:
-        res = var_1 / var_2
+        s_1 = int(var_1)
+        s_2 = int(var_2)
+        res = s_1 / s_2
         return print(res)
+    except ValueError:
+        print("Необходимо ввести число!")
     except ZeroDivisionError:
         print("На ноль делить нельзя!")
+
+
+my_fun(input("Введите первое число: "), input("Введите второе число: "))
