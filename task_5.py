@@ -8,9 +8,16 @@
 то вначале нужно добавить сумму этих чисел к полученной ранее сумме и после этого завершить программу.
 """
 
-# print(ord('\u2386'))
-# print(chr(103))
 
-for s_my in int(input("Введите последовательность: ")):
-    number = sum(s_my)
-print(number)
+def my_func():
+    num = 0
+    try:
+        while num != "#":
+            for i in map(int, input("Для выхода наберите '#'\nВведите числа через пробел: \n").split()):
+                num += i
+            print(num)
+    except ValueError:
+        print(num)
+
+
+my_func()
