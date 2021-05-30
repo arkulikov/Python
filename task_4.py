@@ -16,8 +16,13 @@ def my_func_one(x, y):
 
 
 def my_func_two(x, y):
-    res = 1
-    while y > 0:
+    x, y = float(x), int(y)
+    res = x
+    for _ in range(abs(y) - 1):
         res *= x
-        y -= 1
-    print(res)
+    return 1 / res
+
+
+my_func_one(4, -2)
+print(my_func_two(4, -2))
+
