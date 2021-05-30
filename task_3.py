@@ -5,7 +5,10 @@
 
 
 def my_func(a, b, c):
-    return sum((a, b, c)) - min((a, b, c))
+    try:
+        return sum((a, b, c)) - min((a, b, c))
+    except TypeError:
+        return "Введите числа!"
 
 
-print(my_func(4, 2, 4))
+print(my_func(4, 2, 'r'))
