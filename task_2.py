@@ -7,15 +7,8 @@
 """
 
 old_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
-# my_list = old_list[1:]
 
-# new_list = [el for el in old_list for el_1 in old_list[1:] if el_1 > el]
-new_list = []
-i = 0
-for el in old_list[1:]:
-    for el_1 in old_list:
-        if el > el_1:
-            new_list.append(el)
+new_list = [old_list[i + 1] for i in range(len(old_list) - 1) if old_list[i + 1] > old_list[i]]
 
 print(new_list)
 
