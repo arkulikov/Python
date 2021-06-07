@@ -8,7 +8,7 @@ from functools import reduce
 
 
 def sum_func(el_1, el_2):
-    return el_1 + el_2
+    return el_1 * el_2
 
 
 print(reduce(sum_func, [el for el in range(100, 1001, 2)]))
