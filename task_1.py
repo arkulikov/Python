@@ -10,7 +10,7 @@ script_name, hours, rate, prize = argv
 def salary():
     try:
         sal = (float(hours) * float(rate)) + float(prize)
-        return print(f"Заработная плата: {sal} руб.")
+        print(f"Заработная плата: {sal} руб.")
     except ValueError:
         print("Введите числовые значения!")
 
