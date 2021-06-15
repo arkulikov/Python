@@ -6,11 +6,13 @@
 import random
 
 
+# функция для записи списка в файл
 def record_to_file():
     try:
         my_f = open("for_lesson_5.txt", "w", encoding="utf-8")
-        numb_list = [random.randrange(0, 50) for _ in range(0, 51, 2)]
-        str_list = [str(i) + ' ' for i in numb_list]
+        numb_list = [random.randrange(0, 50) for _ in range(0, 51, 2)]  # создаем рэндомный список
+        str_list = [str(i) + ' ' for i in numb_list]  # переводим элементы списка выше в str
+        # и формируем список
         my_f.writelines(str_list)
         my_f.close()
     except IOError:
