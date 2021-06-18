@@ -18,10 +18,10 @@ my_dic = {}
 
 with open("for_lesson_6.txt", "r", encoding="utf-8") as my_file:
     for line in my_file:
+        numb = 0
         my_list = line.split(" ")
         key = my_list[0][:-1]
         for _ in my_list[1:]:
-            numb = 0
             try:
                 my_el = _.split('(')[0]
                 numb += int(my_el)
