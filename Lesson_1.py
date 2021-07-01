@@ -15,21 +15,17 @@ import time
 
 
 class TrafficLight:
-    color = ""
+    color = ["red", "yellow", "green"]
 
     def running(self):
         while True:
-            TrafficLight.color = "red"
-            print(f"\033[31m{TrafficLight.color}")
+            print(f"\033[31m{TrafficLight.color[0]}")
             time.sleep(7)
-            TrafficLight.color = "yellow"
-            print(f"\033[33m{TrafficLight.color}")
+            print(f"\033[33m{TrafficLight.color[1]}")
             time.sleep(2)
-            TrafficLight.color = "green"
-            print(f"\033[32m{TrafficLight.color}")
+            print(f"\033[32m{TrafficLight.color[2]}")
             time.sleep(5)
-            TrafficLight.color = "yellow"
-            print(f"\033[33m{TrafficLight.color}")
+            print(f"\033[33m{TrafficLight.color[1]}")
             time.sleep(2)
 
 
