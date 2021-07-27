@@ -26,14 +26,14 @@ def my_list_add():
 
     while True:
         try:
-            el = input('Наполните список числами. Для окончания ввода введите "stop": ')
-            if not el.isdigit():
-                MyError('Это не число!!!')
+            el = input("Введите число или stop: ")
+            if el == 'stop':
+                print(my_list)
+                break
+            elif not el.isdigit():
+                raise MyError('Не число!')
         except MyError as err:
             print(err)
-        if el == 'stop':
-            print(my_list)
-            break
         else:
             my_list.append(el)
 
