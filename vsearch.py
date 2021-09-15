@@ -1,7 +1,9 @@
-def search4vowels(word:str) -> set:
+def search4vowels(phrase:str) -> set:
     """Выводит гласные, найденный в указанном слове"""
     vowels = set('aeiou')
-    return vowels.intersection(set(word))
+    return vowels.intersection(set(phrase))
 
-help(search4vowels)
+def search4letters(phrase:str, letters:str) -> set:
+    """Возвращает множество букв из 'letters', найденных в указанной фразе"""
+    return set(letters).intersection(set(phrase))
 
